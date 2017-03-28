@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+		     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		     x:Class="formTest.GreetPage"
+			 BackgroundColor="Silver">
+	<StackLayout VerticalOptions="Center" HorizontalOptions="Center" >
+		<Label Text = "Time" x:Name="ts" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"></Label>
+		<Button Text="Start" x:Name="tb"></Button>
+		<Button Text="Click Me" Clicked = "Handle_Clicked"></Button>
+		<Button Text="Click Me Too" x:Name = "butt" Clicked = "Handle_ClickedCount"></Button>
+		<Label Text="default" x:Name="val"/>	
+		<Slider ValueChanged="Handle_ValueChanged" x:Name="slid"/>
+	</StackLayout>
+
+</ContentPage>

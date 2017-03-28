@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{F9C31DCC-33EF-4BCE-B682-A70E99CD3682}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="formTest/GreetPage.xaml.cs">
+    <Files>
+      <File FileName="formTest/GreetPage.xaml.cs" Line="36" Column="4" />
+      <File FileName="formTest/App.xaml.cs" Line="9" Column="4" />
+      <File FileName="formTest/Properties/AssemblyInfo.cs" Line="29" Column="103" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.formTest.Droid PreferredExecutionTarget="Android.Android_Nexus25" />
+  <MonoDevelop.Ide.ItemProperties.formTest.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.7B3A671B-4A50-48B0-BA93-415D2BC922A1" />
+  <MultiItemStartupConfigurations />
+</Properties>
