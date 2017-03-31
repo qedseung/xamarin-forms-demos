@@ -36,13 +36,9 @@ namespace formTest
 
 		void Vib_Clicked(object sender, System.EventArgs e)
 		{
-			//Vibeit();
 			NativeVibe?.Invoke();
 		}
-		public static void Vibeit()
-		{
-			NativeVibe?.Invoke();
-		}
+
 		public static Action NativeVibe { get; set; }
 	}
 }
