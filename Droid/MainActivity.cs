@@ -20,9 +20,16 @@ namespace formTest.Droid
 
 			base.OnCreate(bundle);
 
+			Vibrator v = (Vibrator)this.BaseContext.GetSystemService(Context.VibratorService);
+
+			App.NativeVibe = () => { v.Vibrate(1000); };
+
+			//App.NativeVibe = () => Console.WriteLine("Vibrate Push");
+
 			global::Xamarin.Forms.Forms.Init(this, bundle);
 
 			LoadApplication(new App());
+
 		}
 	}
 }

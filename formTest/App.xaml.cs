@@ -1,5 +1,6 @@
 ﻿using Xamarin.Forms;
 using System.Diagnostics;
+using System;
 
 namespace formTest
 {
@@ -9,7 +10,10 @@ namespace formTest
 		{
 			InitializeComponent();
 
-			MainPage = new GreetPage(); //formTestPage();
+			var gp = new GreetPage();
+			gp.vib.Clicked+= Vib_Clicked;
+			MainPage = gp; //new GreetPage(); //formTestPage();
+
 		}
 
 		protected override void OnStart()
@@ -29,5 +33,16 @@ namespace formTest
 			// Handle when your app resumes
 			Debug.WriteLine("on resume");
 		}
+
+		void Vib_Clicked(object sender, System.EventArgs e)
+		{
+			//Vibeit();
+			NativeVibe?.Invoke();
+		}
+		public static void Vibeit()
+		{
+			NativeVibe?.Invoke();
+		}
+		public static Action NativeVibe { get; set; }
 	}
 }

@@ -17,6 +17,9 @@ namespace formTest {
     public partial class GreetPage : global::Xamarin.Forms.ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.StackLayout lo;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Label ts;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
@@ -34,6 +37,7 @@ namespace formTest {
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(GreetPage));
+            lo = this.FindByName <global::Xamarin.Forms.StackLayout>("lo");
             ts = this.FindByName <global::Xamarin.Forms.Label>("ts");
             tb = this.FindByName <global::Xamarin.Forms.Button>("tb");
             butt = this.FindByName <global::Xamarin.Forms.Button>("butt");

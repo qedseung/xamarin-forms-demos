@@ -3,7 +3,7 @@
 		     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 		     x:Class="formTest.GreetPage"
 			 BackgroundColor="Silver">
-	<StackLayout VerticalOptions="Center" HorizontalOptions="Center" >
+	<StackLayout x:Name="lo" VerticalOptions="Center" HorizontalOptions="Center" >
 		<Label Text = "Time" x:Name="ts" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"></Label>
 		<Button Text="Start" x:Name="tb"></Button>
 		<Button Text="Click Me" Clicked = "Handle_Clicked"></Button>

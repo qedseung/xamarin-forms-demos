@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-
+using AudioToolbox;
 using Foundation;
 using UIKit;
 
@@ -12,6 +12,10 @@ namespace formTest.iOS
 	{
 		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 		{
+			//App.NativeVibe = () => Console.WriteLine("Vibrator");
+
+			App.NativeVibe = () => { SystemSound.Vibrate.PlaySystemSound(); };
+
 			global::Xamarin.Forms.Forms.Init();
 
 			LoadApplication(new App());

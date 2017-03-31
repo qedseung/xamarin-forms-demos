@@ -13,11 +13,14 @@ namespace formTest
 		bool timer_on = false;
 		float elapsed = 0;
 		const double period = 0.1;
+		public Button vib;
 		public GreetPage()
 		{
 			InitializeComponent();
 			slid.Value = 0.5;
 			tb.Clicked += Handle_Timer;
+			vib = new Button { Text = "Vibrate" };
+			lo.Children.Add(vib);
 		}
 
 		void Handle_Clicked(object sender, System.EventArgs e)
