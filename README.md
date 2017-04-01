@@ -4,8 +4,7 @@ This project demonstrates:
 1. how to implement a timer
 2. how to display an alert
 3. how to use static methods to access native API e.g. vibration. 
-4. how to implement a timer
-5. how to connect to button clicked event
+4. how to connect to button clicked event
 
 Vibration was successfully tested on a Samsung Galaxy S4, but not yet tested on iOS device.
 
