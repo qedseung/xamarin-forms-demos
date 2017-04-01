@@ -1,11 +1,11 @@
-﻿<Properties StartupConfiguration="{791C9A2A-8A6B-408C-8D49-EC3A1D78A319}|Default">
+﻿<Properties StartupConfiguration="{F9C31DCC-33EF-4BCE-B682-A70E99CD3682}|Default">
   <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="formTest/GreetPage.xaml.cs" Line="16" Column="21" />
-      <File FileName="formTest/App.xaml.cs" Line="39" Column="75" />
+      <File FileName="formTest/GreetPage.xaml.cs" Line="61" Column="99" />
+      <File FileName="formTest/App.xaml.cs" Line="25" Column="4" />
       <File FileName="formTest/Properties/AssemblyInfo.cs" Line="29" Column="103" />
       <File FileName="iOS/AppDelegate.cs" Line="16" Column="4" />
-      <File FileName="Droid/MainActivity.cs" Line="23" Column="81" />
+      <File FileName="Droid/MainActivity.cs" Line="25" Column="48" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

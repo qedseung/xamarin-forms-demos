@@ -2,8 +2,7 @@
 //Demos Xamarin Forms 
 using System;
 using Xamarin.Forms;
-using System.Collections.Generic;
-
+using System.Diagnostics;
 
 namespace formTest
 {
@@ -33,22 +32,25 @@ namespace formTest
 			lo.Children.Add(vib);
 		}
 
-		void Handle_Clicked(object sender, System.EventArgs e)
+		void Handle_Clicked(object sender, EventArgs e)
 		{
 			DisplayAlert("Title","Greetings","Ok");
 		}
-
-		void Handle_ClickedCount(object sender, System.EventArgs e)
+		void Handle_ClickedCount(object sender, EventArgs e)
 		{
 			but.Text = string.Format("{0} clicks!", n++);
 		}
-
 		void Handle_ValueChanged(object sender, Xamarin.Forms.ValueChangedEventArgs e)
 		{
 			sl.Text = string.Format("slider: {0:F2}", e.NewValue);
 		}
+		async void Handle_Sheet(object sender, EventArgs e)
+		{
+			var action = await DisplayActionSheet("Social Media?", "Cancel", null, "Facebook", "Twitter", "MySpace?");
+			Debug.WriteLine("Action: " + action);
+		}
 
-		void Handle_Timer(object sender, System.EventArgs e)
+		void Handle_Timer(object sender, EventArgs e)
 		{
 			timer_on = !timer_on;
 			if (timer_on)

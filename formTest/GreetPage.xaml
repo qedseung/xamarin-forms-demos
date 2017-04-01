@@ -6,8 +6,9 @@
 	<StackLayout x:Name="lo" VerticalOptions="Center" HorizontalOptions="Center" >
 		<Label Text = "Time" x:Name="tl" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"></Label>
 		<Button Text="Start" x:Name="tb"></Button>
-		<Button Text="Click Me" Clicked = "Handle_Clicked"></Button>
-		<Button Text="Click Me Too" x:Name = "but" Clicked = "Handle_ClickedCount"></Button>
+		<Button Text="Alert" Clicked = "Handle_Clicked"></Button>
+		<Button Text="Action Sheet" Clicked = "Handle_Sheet"></Button>
+		<Button Text="Click Me" x:Name = "but" Clicked = "Handle_ClickedCount"></Button>
 		<Label Text="default" x:Name="sl"/>	
 		<Slider ValueChanged="Handle_ValueChanged" x:Name="slid"/>
 	</StackLayout>
