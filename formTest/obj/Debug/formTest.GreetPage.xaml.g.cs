@@ -20,16 +20,16 @@ namespace formTest {
         private global::Xamarin.Forms.StackLayout lo;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Label ts;
+        private global::Xamarin.Forms.Label tl;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Button tb;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Button butt;
+        private global::Xamarin.Forms.Button but;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Label val;
+        private global::Xamarin.Forms.Label sl;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private global::Xamarin.Forms.Slider slid;
@@ -38,10 +38,10 @@ namespace formTest {
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(GreetPage));
             lo = this.FindByName <global::Xamarin.Forms.StackLayout>("lo");
-            ts = this.FindByName <global::Xamarin.Forms.Label>("ts");
+            tl = this.FindByName <global::Xamarin.Forms.Label>("tl");
             tb = this.FindByName <global::Xamarin.Forms.Button>("tb");
-            butt = this.FindByName <global::Xamarin.Forms.Button>("butt");
-            val = this.FindByName <global::Xamarin.Forms.Label>("val");
+            but = this.FindByName <global::Xamarin.Forms.Button>("but");
+            sl = this.FindByName <global::Xamarin.Forms.Label>("sl");
             slid = this.FindByName <global::Xamarin.Forms.Slider>("slid");
         }
     }
