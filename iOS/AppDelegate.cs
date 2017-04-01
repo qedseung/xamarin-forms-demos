@@ -14,6 +14,7 @@ namespace formTest.iOS
 		{
 			//App.NativeVibe = () => Console.WriteLine("Vibrator");
 
+			//set App static action to a function i.e. Native API, in this case vibration
 			App.NativeVibe = () => { SystemSound.Vibrate.PlaySystemSound(); };
 
 			global::Xamarin.Forms.Forms.Init();

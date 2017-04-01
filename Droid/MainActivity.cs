@@ -19,11 +19,10 @@ namespace formTest.Droid
 			ToolbarResource = Resource.Layout.Toolbar;
 
 			base.OnCreate(bundle);
-
+			//create vibrator
 			Vibrator v = (Vibrator)this.BaseContext.GetSystemService(Context.VibratorService);
-
+			//set App static action to a function i.e. Native API, in this case vibration
 			App.NativeVibe = () => { v.Vibrate(1000); };
-
 			//App.NativeVibe = () => Console.WriteLine("Vibrate Push");
 
 			global::Xamarin.Forms.Forms.Init(this, bundle);

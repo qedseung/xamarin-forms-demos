@@ -1,4 +1,6 @@
-﻿using Xamarin.Forms;
+﻿//Author: Steven Seung
+//Demos Xamarin Forms
+using Xamarin.Forms;
 using System.Diagnostics;
 using System;
 
@@ -9,10 +11,10 @@ namespace formTest
 		public App()
 		{
 			InitializeComponent();
-
+			// create page instance to access button event
 			var gp = new GreetPage();
 			gp.vib.Clicked+= Vib_Clicked;
-			MainPage = gp; //new GreetPage(); //formTestPage();
+			MainPage = gp; //new GreetPage();
 
 		}
 
@@ -36,6 +38,7 @@ namespace formTest
 
 		void Vib_Clicked(object sender, System.EventArgs e)
 		{
+			//invoke action to be set in AppDelegate(iOS) and MainActivity(Android)
 			NativeVibe?.Invoke();
 		}
 

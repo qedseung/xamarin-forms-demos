@@ -9,16 +9,26 @@ namespace formTest
 {
 	public partial class GreetPage : ContentPage
 	{
+		/*
+		 * Most UI elements defined in GreetPage.xaml file
+		 * lo = stack layout
+		 * tb = timer button
+		 * tl = timer label
+		 * but = counting clicks button
+		 * slid = slider
+		 * sl = slider label
+		*/
 		int n = 1;
 		bool timer_on = false;
 		float elapsed = 0;
 		const double period = 0.1;
-		public Button vib;
+		public Button vib; //vibrate button needs to be public
 		public GreetPage()
 		{
 			InitializeComponent();
 			slid.Value = 0.5;
-			tb.Clicked += Handle_Timer;
+			//events can be connected to methods in xaml or manually
+			tb.Clicked += Handle_Timer; //manual event connection
 			vib = new Button { Text = "Vibrate" };
 			lo.Children.Add(vib);
 		}
@@ -30,12 +40,12 @@ namespace formTest
 
 		void Handle_ClickedCount(object sender, System.EventArgs e)
 		{
-			butt.Text = string.Format("{0} clicks!", n++);
+			but.Text = string.Format("{0} clicks!", n++);
 		}
 
 		void Handle_ValueChanged(object sender, Xamarin.Forms.ValueChangedEventArgs e)
 		{
-			val.Text = string.Format("slider: {0:F2}", e.NewValue);
+			sl.Text = string.Format("slider: {0:F2}", e.NewValue);
 		}
 
 		void Handle_Timer(object sender, System.EventArgs e)
@@ -48,6 +58,7 @@ namespace formTest
 			else {
 				tb.Text = "Start";
 			}
+			//to my relif this timer function doesn't seem to block, repeats until HandleFunc returns false
 			Device.StartTimer(TimeSpan.FromSeconds(period),HandleFunc);
 		}
 
@@ -57,7 +68,7 @@ namespace formTest
 				return false;
 			}
 			elapsed += (float)period;
-			ts.Text = string.Format("{0:F3}", elapsed);
+			tl.Text = string.Format("{0:F3}", elapsed);
 			return true;
 		}
 	}
